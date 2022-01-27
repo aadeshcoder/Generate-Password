@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family     : 'Montserrat', sans-serif;
+    height          : 100vh;
+    background-color: #6ba3ca;
+    background-size : 30%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    color           : #010000;
+}
+
+.main-container {
+    background-color: #726BB5;
+    border-radius   : 5px;
+    padding         : 10px;
+    box-shadow      : 0px 0px 0px 5px #dadae9;
+    transition      : .9s;
+}
+
+.main-container:hover {
+    box-shadow: 0px 0px 0px 5px #201e22;
+    transition: .6s;
+}
+
+.output {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width           : 100%;
+    height          : 50px;
+    border-radius   : 5px;
+    background-color: #A6ADF5;
+    position        : relative;
+    margin-bottom   : 15px;
+}
+
+
+
+.length-inp {
+    height       : 30px;
+    width        : 100px;
+    border       : none;
+    border-radius: 5px;
+    text-align   : center;
+    font-family  : 'Montserrat', sans-serif;
+}
+
+.length-inp::-webkit-outer-spin-button,
+.length-inp::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.cpy-btn {
+    position: absolute;
+    right   : 24px;
+    top     : 14px;
+}
+
+
+#settings-lable,
+#cpy-label {
+    font-size  : small;
+    font-weight: bold;
+}
+
+/* input Button Style */
+input[type="checkbox"] {
+    width             : 40px;
+    height            : 20px;
+    -webkit-appearance: none;
+    background-color  : #A6ADF5;
+    outline           : none;
+    border-radius     : 20px;
+    box-shadow        : inset 0 0 3.5px #bebcbe;
+    transition        : .3s;
+}
+
+input:checked[type="checkbox"] {
+    background-color: rgb(0, 255, 0);
+}
+
+input[type="checkbox"]::before {
+    content         : "";
+    position        : absolute;
+    width           : 20px;
+    height          : 20px;
+    background-color: whitesmoke;
+    border-radius   : 20px;
+    box-shadow      : 0 0 2px #bebcbe;
+    transition      : .3s;
+}
+
+input:checked[type="checkbox"]::before {
+    margin-left: 20px;
+    transition : .3s;
+}
+
+.settings-box-style {
+    background-color: #758AF4;
+    height          : 40px;
+    padding         : 5px;
+    margin-bottom   : 10px;
+    border-radius   : 5px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+
+.generate-psw {
+    width           : 100%;
+    height          : 30px;
+    border          : none;
+    border-radius   : 5px;
+    font-family     : 'Montserrat', sans-serif;
+    font-weight     : bold;
+    background-color: #D5EDFB;
+    cursor          : pointer;
+    transition: .6s;
+}
+
+.generate-psw:hover{
+    background: black;
+    color: #758AF4;
+}
+
+.generate-psw:active{
+    transform: scale(.8);
+    transition: .3s;
+}
+
+
+
